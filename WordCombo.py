@@ -12,6 +12,6 @@ for i in range(4,len(inp)):
     for p in list(permutations(inp,i)):
         word="".join(p)
         if word in web2lowerset and word not in word_set:
-            #print("".join(p)," ", end='') # Multiple words per line
-            print(word) # one word per line
+            print("".join(p)," ", end='') # Multiple words per line
+            #print(word) # One word per line
             word_set.add(word)
